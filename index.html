@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brandlogs</title>
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,37 +15,38 @@
   </head>
   <body class="container-fluid">
     <div class="text-center m-0">
-      <header class="row p-2 px-4">
-        <div class="col-md-1">
-          <div class="logo">
-            <img src="./logo/logo.jpg" alt="logo" />
-          </div>
+      <nav class="navbar row">
+        <div class="text-start">
+          <a class="navbar-brand logo" href="/">
+            <img
+              class="img-thumbnail img-fluid"
+              src="./logo/logo.jpg"
+              alt="logo"
+            />
+          </a>
         </div>
-      </header>
+      </nav>
       <div class="intro">
         <div>
           <div class="headline">
-            <span>
-              Monthly
+            <span class="text-uppercase">
               <span class="headline-color">Birthday</span>
-              fun day
-              <span class="headline-color"> festivals </span>
+              <span class="blue">shopping</span>
+              <span class="headline-color"> fun day </span>
+              <span class="blue">log stories</span>
             </span>
           </div>
           <div class="sub-headline">
-            Rewards you $50 gift voucher bonus for kickstarting feeding starving
+            <p>
+              Rewards you $250 gift voucher bonus to kickstart feeding starving
             families
+            </p>
           </div>
         </div>
         <div class="header-links">
-          <div class="link">
-            <a class="learn text-decoration-none" href="/">Learn More</a>
-          </div>
-          <div class="link link2">
-            <a class="request text-decoration-none" href="/"
-              >Request Invitation</a
-            >
-          </div>
+          <a href="invitation.html">
+            <button class="link link2">Accept Invitation</button>
+          </a>
         </div>
       </div>
 
@@ -55,104 +56,135 @@
         <div class="title">
           <span> Benefits you get </span>
         </div>
-        <div class="sub-title">
-          From the future of retail shopping experience
+        <div class="sub-title text-capitalize">
+          <span>
+            To compliment your reward
+          </span>
         </div>
 
-        <div class="container">
-          <div class="row gx-2 gy-2" id="card1">
+        <div class="container-fluid text-center mt-2">
+          <div class="row grid-container" id="card1">
             <!--card 1-->
             <div class="col benefit">
-              <div class="benefit-header">30%</div>
-              <span class="benefit-title"> care discount voucher reward </span>
+              <div class="d-flex flex-column mb-3">
+                <span class="benefit-header">30%</span>
+                <span class="benefit-title text-capitalize">
+                  care discount voucher reward
+                </span>
+              </div>
               <div class="benefit-message">
-                <span> To save you money on your checkouts </span>
+                <p> To save you money on your checkouts </p>
               </div>
             </div>
             <!--card 2-->
             <div class="col benefit">
-              <div class="benefit-header">100%</div>
-              <span class="benefit-title">
-                Assisted item sorting & suggested checkouts
-              </span>
+              <div class="d-flex flex-column mb-3">
+                <span class="benefit-header">100%</span>
+                <span class="benefit-title text-capitalize">
+                  Assisted item sorting & suggested checkouts
+                </span>
+              </div>
               <div class="benefit-message">
-                <span>To save you time when completing your checkout</span>
+                <p>To save you time when completing your checkout</p>
               </div>
             </div>
             <!--card 3-->
             <div class="col benefit">
-              <div class="benefit-header">100%</div>
-              <span class="benefit-title">Relevant promotional ads</span>
+              <div class="d-flex flex-column mb-3">
+                <span class="benefit-header">100%</span>
+                <span class="benefit-title text-capitalize">Relevant promotional ads</span>
+              </div>
               <div class="benefit-message">
-                <span
+                <p
                   >To give you peace of mind to concentrate on what
-                  matters</span
+                  matters</p
                 >
               </div>
             </div>
             <!--card 4-->
             <div class="col benefit">
-              <div class="benefit-header">100%</div>
-              <span class="benefit-title"
-                >Customization options for budget & shopping categories</span
-              >
+              <div class="d-flex flex-column mb-3">
+                <span class="benefit-header">100%</span>
+                <span class="benefit-title text-capitalize"
+                  >Customization options for budget & shopping categories</span
+                >
+              </div>
               <div class="benefit-message">
-                <span>To prevent you from impulse buying</span>
+                <p>To prevent you from impulse buying</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="container">
-          <div class="row gx-2 gy-2" id="card2">
+        <div class="container-fluid text-center">
+          <div class="row grid-container" id="card2">
             <!--card 1-->
             <div class="col benefit">
-              <small>Upto</small>
-              <div>
-                <span class="benefit-header">90</span>
+              <div class="d-flex flex-column mb-3">
+                <div class="">
+                  <small>Up to</small>
+                  <div>
+                    <span class="benefit-header">90</span>
+                    <span class="days">Days</span>
+                    <div class="benefit-title text-capitalize">
+                      Gifting flexible payment plan
+                    </div>
+                  </div>
+                </div>
               </div>
-              <span class="days">Days</span>
-              <div class="benefit-title">Gifting flexible payment plan</div>
+
               <div class="benefit-message">
-                <span
+                <p
                   >To give you financial ease when gifting family and
-                  friends</span
+                  friends</p
                 >
               </div>
             </div>
             <!--card 2-->
             <div class="col benefit">
-              <div class="benefit-header">100%</div>
-              <span class="benefit-title">
-                Remote peer to peer shopping collaboration
-              </span>
+              <div class="d-flex flex-column mb-3">
+                <span class="benefit-header">100%</span>
+                <span class="benefit-title text-capitalize">
+                  Remote peer to peer shopping collaboration
+                </span>
+              </div>
               <div class="benefit-message">
-                <span
+                <p
                   >To enable you afford birthday shopping value when you need it
-                  most</span
+                  most</pn
                 >
               </div>
             </div>
             <!--card 3-->
             <div class="col benefit">
-              <div class="benefit-header">+365</div>
-              <span class="benefit-title"> Calendar days checkout bonus </span>
+              <div class="d-flex flex-column mb-3">
+                <span class="benefit-header">+365</span>
+                <span class="benefit-title text-capitalize">
+                  Calendar days checkout bonus
+                </span>
+              </div>
               <div class="benefit-message">
-                <span
+                <p
                   >To guarantee daily source of livelihood for remote shopping
-                  assistants</span
+                  assistants</p
                 >
               </div>
             </div>
             <!--card 4-->
-            <div class="col benefit">
-              <small>Upto</small>
-              <div class="benefit-header">6500</div>
-              <span class="benefit-title"> care discount voucher reward </span>
+            <div class="col benefit text-center">
+              <div class="d-flex flex-column mb-3 text-start">
+                <small>Up to</small>
+                  <span class="benefit-header">6500</span>
+                  <div>
+                    <span class="benefit-title text-capitalize text-center">
+                      Globally spoken language options
+                    </span>
+                  </div>
+              </div>
               <div class="benefit-message">
-                <span
+                <p
                   >To grant you freedom to easily express your shopping
-                  needs</span
+                  needs</p
                 >
               </div>
             </div>
@@ -163,17 +195,17 @@
       <div class="row works">
         <div class="work-intro">
           <div class="work-title">
-            <span>How it works</span>
+            <p>How it works</p>
           </div>
           <div class="work-message">
-            <span>
+            <p>
               Say Goodbye to wanting something badly for your birthday but not
               being able to afford it or when your family and friends gifted
               items don’t match your Shopping Preferrence.
-            </span>
+            </p>
           </div>
         </div>
-        <div class="ratio ratio-16x9 my-5 row">
+        <div class="video ratio ratio-16x9 my-5 row">
           <iframe
             class="mx-4"
             src="https://www.youtube.com/embed/SdsXgqbO-Zk"
@@ -190,62 +222,68 @@
           <div class="purpose-intro text-uppercase">
             <span>our purpose</span>
           </div>
-          <div class="purpose-title">To End Hunger in America and Beyond!</div>
+          <div class="purpose-title">
+            <span> To End Hunger in America and Beyond! </span>
+          </div>
         </div>
         <div class="purpose-message">
-          <span>
+          <p>
             by unlocking new shopping possibilities to guarantee recurring
             donations to feed starving families
-          </span>
+          </p>
         </div>
 
         <div class="extra-info">
-          <div class="info-title my-4">
+          <div class="info-title">
             <span>Did you know?</span>
           </div>
           <div class="extra-message">
-            According to the UNITED STATE DEPARTMENT OF AGRICULTURE, more than
-            34 million people, including 9 million children, in the United
-            States Are Food Insecure. At the same time, it has been estimated
-            that almost 800 million people worldwide don’t have enough food to
-            eat. This is quite a staggering figure.
+            <p>
+              According to the UNITED STATE DEPARTMENT OF AGRICULTURE, more than
+              34 million people, including 9 million children, in the United
+              States Are Food Insecure. At the same time, it has been estimated
+              that almost 800 million people worldwide don’t have enough food to
+              eat. This is quite a staggering figure.
+            </p>
           </div>
 
-          <div class="extra-title my-4">
-            I know you are wondering what Birthday got to do with a hunger
-            cause?
+          <div class="extra-title">
+            <p>
+              I know you are wondering what Birthday got to do with a hunger
+              cause?
+            </p>
           </div>
           <div class="extra-message">
-            <span>
+            <p>
               It’s a no-brainer; gifting all over the world is mainly exercised
               during birthday celebrations with 74% of Americans currently
               buying gifts for others so they can use them, with the current
               market estimated to be a staggering $162Band expected to reach
               $388B by 2027.
-            </span>
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="impact row my-5">
+      <div class="impact row">
         <div class="impact-title text-uppercase my-4">
-          <span>The impact on lives</span>
+          <p>The impact on lives</p>
         </div>
         <div class="extra-message">
-          <span>
-            The domino effect of us guaranteeing donation from 124million likely
-            Birthday Shopping Fun Day Customers in America will result with us
-            donating up to $2.3Billion Annually by 2029 to help serve meals to
+          <p>
+            The domino effect of us guaranteeing donation from 245 million
+            likely Birthday Shopping Fun Day Customers in America will result
+            with us donating up to $2.5 Billion by 2029 to help serve meals to
             more than 34 million people, including 9 million children, who are
             food insecure in the United States through organizations established
             to fight hunger.
-          </span>
+          </p>
         </div>
       </div>
 
       <div class="questions row my-5 text-start">
         <div class="questions-title text-capitalize my-4 text-center">
-          <span> Frequently asked questions </span>
+          <p> Frequently asked questions </p>
         </div>
 
         <div class="container">
@@ -253,7 +291,7 @@
             <input type="radio" name="acc" id="acc1" />
             <label for="acc1">
               <h2>01</h2>
-              <h3>What is Birthday fun for hunger challenge?</h3>
+              <h3>What is Birthday shopping fun day log stories?</h3>
             </label>
             <div class="content">
               <p>
@@ -272,7 +310,7 @@
             <label for="acc2">
               <h2>02</h2>
               <h3>
-                How do you participate in Birthday Fun for hunger challenge?
+                How do you participate in Birthday shopping Fun day log stories?
               </h3>
             </label>
             <div class="content">
@@ -292,8 +330,8 @@
             <label for="acc3">
               <h2>03</h2>
               <h3>
-                Who is eligible to participate in Birthday fun for hunger
-                challenge?
+                Who is eligible to participate in Birthday shopping fun day log
+                stories
               </h3>
             </label>
             <div class="content">
@@ -312,7 +350,7 @@
             <input type="radio" name="acc" id="acc4" />
             <label for="acc4">
               <h2>04</h2>
-              <h3>When will I receive my $50 Gift Voucher bonus?</h3>
+              <h3>When will I receive my $250 Gift Voucher bonus reward?</h3>
             </label>
             <div class="content">
               <p>
@@ -328,40 +366,38 @@
         </div>
       </div>
 
-      <div class="unlock row mb-2">
-        <span class="text-uppercase">
-          Unlocking new shopping possibilities
-        </span>
+      <div class="unlock row">
+        <p class="">Unlocking New Shopping Possibilities</p>
       </div>
 
       <footer class="row p-4">
-        <div class="container">
-          <div class="d-flex align-items-center">
-            <div class="col-sm-2">
-              <div class="logo">
-                <img src="./logo/logo.jpg" alt="logo" />
+        <div class="container d-flex align-items-center">
+          <div class="row">
+            <!-- <div class="col-lg-2 col-md col-sm"></div> -->
+            <div class="col-lg col-md col-sm">
+              <div class="footer-links">
+                <p>
+                  <a href="contact.html" class="text-reset text-decoration-none">
+                    Contact Us
+                  </a>
+                </p>
+                <p></p>
+                <p>Brandlogs Inc.</p>
+                <p>94306 Palo Alto, CA, United States.</p>
               </div>
-            </div>
-            <div class="col-sm-10 footer-links">
-              <p>
-                <a href="/contact" class="text-reset text-decoration-none">
-                  Contact Us
-                </a>
-              </p>
-              <p>Brandlogs Inc.</p>
-              <p>
-                <i class="fas fa-envelope text-secondary"></i>
-                94306 Palo Alto, CA, United States.
-              </p>
             </div>
           </div>
         </div>
+        <small class="text-start sm-text-center ms-3"
+          >© Copyright 2023 Reserved Brandlogs Inc.</small
+        >
       </footer>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
-    ></script>
+    >
+  </script>
   </body>
 </html>

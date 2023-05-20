@@ -1,3 +1,8 @@
+/* @font-face {
+  font-family: "AmericanSans";
+  src: url(./fonts/lhf-american-sans_copyfonts.com.ttf);
+} */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,23 +10,24 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "AmericanSans";
   text-align: center;
   color: black;
   overflow-x: hidden;
 }
 
-header {
-    margin: 0;
-    height: 15vh;
-    width: 100vw;
-    background-color: #2da24b;
-    margin: 50px 0;
+nav {
+  margin: 0;
+  height: 15vh;
+  width: 100vw;
+  background-color: #1c9346;
+  margin: 30px 0;
 }
 
-header img {
-    max-height: 100%;
-    max-width: 100%;
+nav img {
+  max-height: 10vh;
+  max-width: 10vw;
+  margin: 0 20px;
 }
 
 .intro {
@@ -36,7 +42,11 @@ a {
 
 .headline {
   font-size: 36px;
-  margin-bottom: 10px;
+  /* margin-bottom: 5px; */
+}
+
+.blue {
+  color: #3783b4;
 }
 
 .sub-headline {
@@ -55,27 +65,35 @@ a {
 }
 
 .link {
-  margin: 10px 20px;
+  margin: 8px;
   padding: 10px 30px;
+  background-color: #fff;
   border: 1px solid #db2127;
   border-radius: 30px 0;
+  font-size: 48px;
   cursor: pointer;
   transition: 500ms ease;
 }
 
+a .link2 {
+  font-size: 28px;
+}
+
 .link:hover {
-    background: #db2127;
-    color: #fff;
+  background: #db2127;
+  color: #fff;
 }
 
 .link2 {
   background-color: #db2127;
-  padding: 10px 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .link2:hover {
-    background-color: #fff;
-    color: #333;
+  background-color: #fff;
+  color: #333;
 }
 
 .request {
@@ -83,7 +101,7 @@ a {
 }
 
 .request:hover {
-    color: #333;
+  color: #333;
 }
 
 .learn {
@@ -91,21 +109,365 @@ a {
 }
 
 .learn:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  margin: 10px;
+  margin: 0 10px;
   color: white;
-  gap: 10px 10px;
+  gap: 10px 0;
   justify-content: center;
 }
 
-/* #cards {
-    margin: 10px;
-} */
+@media only screen and (max-width: 400px){
+  nav {
+    height: 10vh;
+  }
+
+  nav img {
+    min-width: 6vw;
+    min-height: 6vh;
+  }
+
+  .headline span {
+    font-size: 16px;
+  }
+
+  .sub-headline p {
+    font-size: 12px;
+  }
+
+  .header-links button {
+    margin: 8px 20px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #db2127;
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 10px 0;
+    cursor: pointer;
+    transition: 500ms ease;
+  }
+
+  .header-links .link2 {
+    font-size: 24px;
+    font-weight: 400;
+    background-color: #db2127;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #card2 .benefit {
+    background-color: #3783b4;
+  }
+
+  .benefit-header {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .days {
+    font-size: 8px;
+    font-weight: 500;
+  }
+
+  .benefit-title span {
+    font-size: 6px;
+  }
+
+  .benefit-message p {
+    font-size: 24px;
+  }
+
+  small {
+    font-size: 8px;
+  }
+
+  .work-title p {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .work-message p {
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  .purpose-message p,
+  .extra-message p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .extra-title p {
+    color: #db2127;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px 0;
+  }
+
+  .info-title span {
+    color: #db2127;
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  .impact-title p,
+  .questions-title p {
+    background-color: #f7a01c;
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .questions-title p {
+    background-color: #3783b4;
+  }
+
+  .impact-title, .questions-title {
+    padding: 10px;
+  }
+
+  .container .tab label h2 {
+    width: 5px;
+    height: auto;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 0.6em;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 0 5px;
+  }
+
+  .container .tab label::after {
+    display: none;
+  }
+
+  .unlock p {
+    font-size: 12px;
+  }
+
+  footer small {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+  nav {
+    height: 12vh;
+  }
+
+  nav img {
+    min-height: 8vh;
+    min-width: 8vw;
+    margin: 0 15px;
+  }
+
+  .headline {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .sub-headline {
+    font-size: 18px;
+  }
+
+  .header-links {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .link {
+    margin: 8px 20px;
+    padding: 8px 24px;
+    background-color: #fff;
+    border: 1px solid #db2127;
+    border-radius: 30px 0;
+    cursor: pointer;
+    transition: 500ms ease;
+  }
+
+  .link:hover {
+    background: #db2127;
+    color: #fff;
+  }
+
+  .link2 {
+    background-color: #db2127;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .link2:hover {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .request {
+    color: white;
+  }
+
+  .request:hover {
+    color: #333;
+  }
+
+  .learn {
+    color: black;
+  }
+
+  .learn:hover {
+    color: #fff;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .benefit {
+    padding-bottom: 5px;
+  }
+
+  .benefit-header span {
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  .days {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .benefit-title span {
+    font-size: 8px;
+  }
+
+  .benefit-message {
+    font-size: 16px;
+  }
+
+  small {
+    font-size: 8px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .benefit {
+    padding: 15px 10px;
+  }
+
+  .work {
+    text-align: center;
+  }
+
+  .work-title span {
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  .work-message span {
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  .video {
+    margin: 0;
+  }
+
+  .purpose-title span {
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .purpose-header {
+    background-color: #3783b4;
+    color: white;
+    width: auto;
+    padding: 20px 0;
+  }
+
+  .purpose-intro span {
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .purpose-message span,
+  .extra-message span {
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .extra-title p {
+    color: #db2127;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+
+  .info-title span {
+    color: #db2127;
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  .impact-title span,
+  .questions-title span {
+    background-color: #f7a01c;
+    color: white;
+    padding: 5px 0;
+    font-size: 48px;
+    font-weight: 500;
+  }
+
+  .questions-title span {
+    background-color: #3783b4;
+  }
+
+  .impact-title, .questions-title {
+    padding: 30px;
+  }
+
+  .container .tab label h2 {
+    width: 20px;
+    height: 20px;
+    font-size: 0.6rem;
+  }
+
+  .unlock p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .footer-links p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  footer small {
+    text-align: center;
+  }
+}
+
+/* Benefits */
 
 .title {
   font-size: 36px;
@@ -114,13 +476,13 @@ a {
 }
 
 .sub-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
 }
 
 .benefit {
   margin: 0 10px;
-  padding: 20px 0;
+  padding-bottom: 5px;
   box-shadow: 6px 8px 5px -2px rgba(0, 0, 0, 0.56);
   -webkit-box-shadow: 6px 8px 5px -2px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: 6px 8px 5px -2px rgba(0, 0, 0, 0.56);
@@ -132,16 +494,32 @@ a {
   color: white;
 }
 
-.benefit:nth-child(odd) {
+/* .benefit {
   background-color: #3783b4;
 }
 
 .benefit:nth-child(even) {
   background-color: #f7a01c;
+} */
+
+#card1 .benefit:nth-child(odd) {
+  background-color: #3783b4;
+}
+
+#card1 .benefit:nth-child(even) {
+  background-color: #f7a01c;
+}
+
+#card2 .benefit:nth-child(even) {
+  background-color: #3783b4;
+}
+
+#card2 .benefit:nth-child(odd) {
+  background-color: #f7a01c;
 }
 
 .benefit-header {
-  font-size: 36px;
+  font-size: 64px;
   font-weight: 500;
 }
 
@@ -151,15 +529,18 @@ a {
 }
 
 .benefit-title {
-  font-size: 12px;
-  margin: 0;
-  padding: 0;
+  font-size: 18px;
 }
 
 .benefit-message {
-  font-size: 18px;
-  padding-top: 20px;
+  font-size: 24px;
 }
+
+small {
+  font-size: 12px;
+}
+
+/* Works */
 
 .works,
 .purpose {
@@ -168,13 +549,14 @@ a {
   width: 100vw;
 }
 
-.impact, .questions {
-    margin: 0;
-    width: 100vw;
+.impact,
+.questions {
+  margin: 0;
+  width: 100vw;
 }
 
 .work-intro {
-  background-color: #2da24b;
+  background-color: #1c9346;
   color: white;
   padding: 50px;
 }
@@ -183,8 +565,10 @@ a {
   text-transform: uppercase;
   font-size: 72px;
   font-weight: 600;
-  margin: 40px 0;
+  margin: 5px 0;
 }
+
+/* Purpose */
 
 .work-message,
 .purpose-title {
@@ -233,9 +617,17 @@ a {
   background-color: #f7a01c;
   color: white;
   width: auto;
-  padding: 80px;
+  padding: 40px 0;
   font-size: 84px;
   font-weight: 500;
+}
+
+.questions-title {
+  visibility: visible;
+}
+
+.questions-title-short {
+  visibility: hidden;
 }
 
 .questions {
@@ -256,7 +648,7 @@ a {
 .container .tab {
   position: relative;
   background: #fff;
-  padding: 0 20px 20px;
+  padding: 0 10px 20px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
@@ -276,7 +668,7 @@ a {
   right: 20px;
   font-size: 2em;
   color: rgba(0, 0, 0, 0.1);
-  transition: transform 0.5s;
+  transition: transform 1s;
 }
 
 .container .tab:hover label::after {
@@ -309,7 +701,7 @@ a {
 
 .container .tab .content {
   max-height: 0;
-  transition: 0.5s;
+  transition: 1s;
   overflow: hidden;
 }
 
@@ -321,7 +713,7 @@ a {
   background: #db2127;
 }
 .container .tab:nth-child(2) label h2 {
-  background: #2da24b;
+  background: #1c9346;
 }
 .container .tab:nth-child(3) label h2 {
   background: #f7a01c;
@@ -331,24 +723,24 @@ a {
 }
 
 .unlock {
-  background-color: #2da24b;
+  background-color: #1c9346;
+}
+
+.unlock p {
+  
   color: #fff;
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 500;
-  padding: 30px;
+  padding: 18px;
 }
 
 footer {
-  background-color: #2da24b;
+  background-color: #1c9346;
   color: #fff;
+  width: 100vw;
 }
 
-.logo img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.footer-links {
-  font-size: 36px;
-  font-weight: 500;
+.footer-links p {
+  font-size: 16px;
+  font-weight: 400;
 }
