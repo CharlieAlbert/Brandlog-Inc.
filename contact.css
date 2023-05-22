@@ -2,6 +2,20 @@ body {
   font-family: sans-serif;
 }
 
+nav {
+  margin: 0;
+  height: 15vh;
+  width: 100vw;
+  background-color: #1c9346;
+  margin: 30px 0;
+}
+
+nav img {
+  max-height: 10vh;
+  max-width: 10vw;
+  margin: 0 20px;
+}
+
 input {
   outline: none;
   border: none;
@@ -424,11 +438,11 @@ input.input100 {
   width: 100%;
   height: 50px;
   border-radius: 10px;
-  background: #1c9346;
+  background: #cd201f;
   margin-top: 20px;
 
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   line-height: 1.2;
   text-transform: capitalize;
@@ -559,6 +573,7 @@ input.input100 {
 
 .unlock {
   background-color: #1c9346;
+  text-align: center;
 }
 
 .unlock p {
@@ -569,6 +584,7 @@ input.input100 {
 }
 
 footer {
+  text-align: center;
   background-color: #1c9346;
   color: #fff;
   width: 100vw;
@@ -577,4 +593,8 @@ footer {
 .footer-links p {
   font-size: 16px;
   font-weight: 400;
+}
+
+.footer-container {
+  width: 100%;
 }
