@@ -41,7 +41,7 @@ a {
 }
 
 .headline {
-  font-size: 36px;
+  font-size: 28px;
   /* margin-bottom: 5px; */
 }
 
@@ -50,7 +50,7 @@ a {
 }
 
 .sub-headline {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -121,7 +121,7 @@ a .link2 {
   justify-content: center;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
   nav {
     height: 10vh;
   }
@@ -229,7 +229,8 @@ a .link2 {
     background-color: #3783b4;
   }
 
-  .impact-title, .questions-title {
+  .impact-title,
+  .questions-title {
     padding: 10px;
   }
 
@@ -258,7 +259,6 @@ a .link2 {
   footer small {
     text-align: center;
   }
-
 }
 
 @media only screen and (max-width: 640px) {
@@ -442,7 +442,8 @@ a .link2 {
     background-color: #3783b4;
   }
 
-  .impact-title, .questions-title {
+  .impact-title,
+  .questions-title {
     padding: 30px;
   }
 
@@ -727,7 +728,6 @@ small {
 }
 
 .unlock p {
-  
   color: #fff;
   font-size: 24px;
   font-weight: 500;
